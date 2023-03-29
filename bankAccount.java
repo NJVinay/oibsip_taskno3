@@ -139,7 +139,7 @@ public class bankAccount
                     System.out.println("\n");
                     System.out.println("Balance = " + balance);
                     System.out.println("\n");
-                    System.out.println("Press F to exit");
+                    
                     System.out.print("\n");
                     break;
                     
@@ -152,7 +152,7 @@ public class bankAccount
                     break;
             }
         } 
-        while (option != 'E');
+        while (option != 'F');
         System.out.println("Thank you for banking with us.");
     }
 
