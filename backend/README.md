@@ -88,9 +88,23 @@ backend/
 
 ## Deployment
 
-- Railway, Render, Fly.io (free options)
-- Azure App Service, AWS Elastic Beanstalk, Heroku (paid/enterprise)
-- Configure environment variables and database in deployment dashboard
+### Docker Deployment (Render, Railway, etc.)
+
+1. Ensure you have a `Dockerfile` in this directory (see sample below).
+2. On Render, select Docker as the runtime and set the root directory to `backend`.
+3. Build command: `mvn clean package -DskipTests` (or `./mvnw clean package -DskipTests`)
+4. The Dockerfile will automatically copy the built JAR and run it.
+5. Add your environment variables in the Render dashboard.
+
+#### Sample Dockerfile
+
+```dockerfile
+FROM eclipse-temurin:17-jdk-alpine
+WORKDIR /app
+COPY target/*.jar app.jar
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "app.jar"]
+```
 
 ## Troubleshooting
 
