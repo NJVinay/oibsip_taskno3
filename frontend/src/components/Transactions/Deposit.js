@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { Container, Form, Button, Alert, Card } from 'react-bootstrap';
+import { Container, Form, Button, Alert } from 'react-bootstrap';
 import { deposit, fetchAccounts, clearError, clearSuccess } from '../../store/slices/accountSlice';
 
 const Deposit = () => {
