@@ -1,0 +1,59 @@
+# Environment files
+.env
+*.env
+!.env.example
+
+# Backend
+backend/target/
+backend/.mvn/
+backend/mvnw
+backend/mvnw.cmd
+backend/logs/
+backend/.env
+*.log
+
+# Frontend
+frontend/node_modules/
+frontend/build/
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+.DS_Store
+
+# OS files
+Thumbs.db
+
+# Compiled files
+*.class
+*.jar
+!backend/target/*.jar
+
+# Temporary files
+*.tmp
+*.bak
+*~
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Docker
+.docker/
+
+# Security
+*.pem
+*.key
+*.cert
+
+# Production
+deploy.sh
