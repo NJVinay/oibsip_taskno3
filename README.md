@@ -1,25 +1,29 @@
 # ATM Interface - Basic Banking System
 
-This is Task #3 from the Oasis Infobyte Java Development Internship program - creating a functional ATM Interface simulation.
+This is a full-stack ATM Interface project for the Oasis Infobyte Java Development Internship program. It features a modern React frontend and a secure Java Spring Boot backend simulating basic banking operations.
 
 ## 📋 Project Overview
 
-A console-based ATM interface application that simulates basic banking operations. The application provides an interactive menu-driven system for users to perform various banking transactions.
+This project provides a web-based ATM interface for users to perform banking transactions securely. It includes:
+
+- A React frontend (user interface)
+- A Java Spring Boot backend (REST API, authentication, business logic)
 
 ## ✨ Features
 
-- **Check Balance** - View current account balance
-- **Deposit Money** - Add funds to the account
-- **Withdraw Money** - Remove funds from the account
-- **Previous Transaction** - View details of the last transaction
-- **Transfer Money** - Transfer funds to another account
-- **User-Friendly Interface** - Interactive menu with clear options
+- User registration & login (JWT authentication)
+- Check balance, deposit, withdraw, transfer
+- Transaction history & last transaction
+- Secure PIN verification for sensitive actions
+- Responsive, modern UI
+- Global error handling
 
 ## 🛠️ Technologies Used
 
-- **Language:** Java
-- **IDE:** Any Java-compatible IDE (Eclipse, IntelliJ IDEA, VS Code, etc.)
-- **JDK Version:** Java 8 or higher
+- **Frontend:** React, Redux, Bootstrap, Axios
+- **Backend:** Java 17+, Spring Boot, Spring Security, JWT, BCrypt
+- **Build Tools:** Maven or Gradle
+- **Dev Tools:** VS Code, IntelliJ IDEA, Postman
 
 ## 📁 Project Structure
 
@@ -31,39 +35,14 @@ oibsip_taskno3/
 
 ## 🚀 How to Run
 
-1. **Compile the program:**
+See the detailed setup in each subproject:
 
-   ```bash
-   javac bankAccount.java
-   ```
-
-2. **Run the application:**
-
-   ```bash
-   java bankAccount
-   ```
-
-3. **Follow the on-screen menu:**
-   - Enter the corresponding letter (A-F) to perform an operation
-   - Follow the prompts to complete transactions
+- [Frontend/README.md](frontend/README.md)
+- [Backend/README.md](backend/README.md)
 
 ## 💻 Usage Example
 
-```
-Welcome VINAY
-Your ID is 123456
-
-A. Check Balance
-B. Deposit
-C. Withdraw
-D. Previous Transaction
-E. Transfer
-F. Exit
-
-====================================
-Enter an option
-====================================
-```
+See screenshots and API usage in the respective frontend and backend READMEs.
 
 ## 🎯 Key Functionalities
 
@@ -89,32 +68,23 @@ Facilitates money transfer to another account by providing recipient details and
 
 ## 👨‍💻 Default Configuration
 
-- **Default Customer Name:** VINAY
-- **Default Customer ID:** 123456
-- **Initial Balance:** 0
+See backend README for default configuration and environment variables.
 
 ## 🔄 Future Enhancements
 
-- Add PIN authentication
-- Implement transaction history
-- Add minimum balance requirements
-- Include interest calculation
-- Support multiple accounts
-- Add data persistence (database/file storage)
+- Add persistent database (PostgreSQL/MySQL)
+- Multi-user support
+- Admin dashboard
+- Email notifications
+- Docker deployment
 
 ## 📝 About
 
-This project was developed as part of the **Oasis Infobyte Internship Program** to demonstrate fundamental Java programming concepts including:
-
-- Object-Oriented Programming
-- User Input Handling
-- Control Flow (switch-case, loops)
-- Method Implementation
-- Console I/O Operations
+This project was developed as part of the **Oasis Infobyte Internship Program** to demonstrate full-stack development, secure authentication, RESTful API design, and modern frontend engineering.
 
 ## 📄 License
 
-This project is part of an internship task and is intended for educational purposes.
+MIT License — see LICENSE file.
 
 ---
 

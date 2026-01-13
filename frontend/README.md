@@ -1,5 +1,9 @@
 # ATM Interface Frontend - Setup Guide
 
+#
+
+**See also:** [Backend/README.md](../backend/README.md)
+
 ## Prerequisites
 
 - Node.js 16 or higher
